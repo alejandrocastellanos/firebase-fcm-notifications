@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class FirebaseInitializer {
     public static void initialize() throws IOException {
-        FileInputStream serviceAccount = new FileInputStream("/Users/user/Documents/Courses/push-notification/google_auth_credentials.json");
+        FileInputStream serviceAccount = new FileInputStream("google_auth_credentials.json");
 
         FirebaseOptions options = FirebaseOptions.builder()
                 .setCredentials(GoogleCredentials.fromStream(serviceAccount))
